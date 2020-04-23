@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./js/phaser.js" type="text/javascript"></script> 
+    <link rel="stylesheet" type="text/css"  href="./assets/style.css"></link>
+    <script src="./js/base.js" type="text/javascript"></script>
+</head>
+<body>
+    <script>
+
+
+    var map;
+    var player;
+    var cursors;
+    var tileWidth = 64;
+    var tileHeight = 64;
+    var field_right_size = 3;
+    var size = 12;
+    var marker;
+    var currentTile = 0;
+    var currentLayer;
+    var groundLayer, objectLayer;
+    var text;
+    var graphics;
+    var coin_base_x = tileWidth * (size + 3)
+    var buttle_base_x = tileWidth * (size + 3) + 50
+    var tileset;
+    var tile_sprite_id_map = [5,42,45,18,33,31,8,2,13,0,20,41,17,16,32,25,27,43,7,1,28,15,24,12,14,26,10,6,9,22,23,21,4,29,11,37,35,44,39,36,3,19,40,34,38,30];
+    var tile_ground = 206;
+    var game = new Phaser.Game((size + 2 + field_right_size) * tileWidth, (size + 2) * tileHeight, Phaser.AUTO, 'shackal', { preload: preload, create: create, update: update });
+    var socket;
+    var gameID=null;
+
+    function update() {
+        m_objects.filter(e => e.text!=undefined).forEach(e => {
+            e.text.x = Math.floor(e.object.x + e.object.width / 2);
+            e.text.y = Math.floor(e.object.y + e.object.height + 10);
+        });;
+    }
+
+    function preload ()
+    {
+        game.load.image('background', './img/sea.png');
+        game.load.tilemap('map', './assets/map2.json', null, Phaser.Tilemap.TILED_JSON);
+        game.load.spritesheet('tiles','/img/tiles.jpg', 64, 64, 49); 
+        game.load.image('map_tileset', './img/tiles.jpg');  
+        game.load.image('combine-64', './img/combine-64.png');  
+        game.load.image('ground', './img/ground.png');
+        game.load.image('ship', './img/ship-1.png');
+        game.load.image('coin', './img/coin-1.png');
+        game.load.image('buttle', './img/buttle-1.png');
+        game.load.image('cannonball', './img/ball-1.png');
+        game.load.image('boat', './img/boat-1.png');
+        game.load.image('cart', './img/cart-2.png');
+        game.load.spritesheet('pirate-1', './img/pirate-1.png', 94, 64, 16);
+        game.load.spritesheet('pirate-2', './img/pirate-2.png', 94, 64, 16);
+        game.load.spritesheet('pirate-3', './img/pirate-3.png', 94, 64, 16);
+        game.load.spritesheet('pirate-4', './img/pirate-4.png', 94, 64, 16);
+    }
+
+    function create ()
+    {
+        //game.stage.backgroundColor = '#FFFFFF';
+        image0 = game.add.tileSprite(0, 0, game.width, game.height, 'background');
+        map = game.add.tilemap('map');
+        tileset = map.addTilesetImage('map_tileset', 'map_tileset');  
+        map.addTilesetImage('combine-64', 'combine-64');  
+        layer = map.createLayer('map');  // set layer name
+        layer.scrollFactorX = 0.5;
+        layer.scrollFactorY = 0.5;
+        layer.resizeWorld();
+        currentLayer=layer;
+        
+        groundLayer = game.add.group();
+        objectLayer = game.add.group();
+
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        game.scale.pageAlignHorizontally = true;
+        game.scale.pageAlignVertically = true;
+
+        createTileSelector();
+
+        // var pirate = game.add.sprite(300, 200, 'pirate-4');
+        // pirate.scale.setTo(0.75, 0.75);
+        // pirate.animations.add('walk');
+        // pirate.animations.play('walk', 24, true);
+
+        game.input.onDown.add(function (pointer) {
+
+            currentTile = map.getTile(currentLayer.getTileX(marker.x), currentLayer.getTileY(marker.y));
+
+            if (!game.secondClick) {
+                game.secondClick = true;
+                game.time.events.add(300, function() {
+                    game.secondClick = false;
+                }, game);
+                return;
+            }
+            
+            if (currentTile.index==tile_ground) {
+                socket.send(JSON.stringify(
+                    {
+                        flip_tile: (currentTile.y - 1) * size + currentTile.x -1,
+                    }
+                ));
+            }   
+        });        
+
+        game.input.addMoveCallback(updateMarker, this);
+        
+        //cursors = game.input.keyboard.createCursorKeys();
+
+        // loadJSON('./statev2.json',
+        //  function(data) { readData(data); },
+        //  function(xhr) { console.error(xhr); }
+        // );
+
+        socket = new WebSocket("ws://93.81.87.8:6789");
+        socket.onopen = function(e) {
+            console.log("Соединение установлено");
+            timer = game.time.create(false);
+
+            //  Set a TimerEvent to occur after 2 seconds
+            timer.loop(1000, function(){ socket.send("{}"); }, this);
+            timer.start();
+
+        };
+
+        socket.onmessage = function(event) {
+            readData(JSON.parse(event.data));
+            console.log('Данные получены с сервера');
+        };
+
+        socket.onclose = function(event) {
+        if (event.wasClean) {
+            console.log(`[close] Соединение закрыто чисто, код=${event.code} причина=${event.reason}`);
+        } else {
+            console.log('Соединение прервано');
+        }
+        };
+
+        socket.onerror = function(error) {
+            console.log(`[error] ${error.message}`);
+        };
+        
+
+        // new mapObject(1,46);
+        // new mapObjectPirate(1,55);
+        // new mapObject(1,52);
+    }   
+
+    function updateMarker() {
+        var x = game.input.activePointer.worldX;
+        var y = game.input.activePointer.worldY;
+        if (x>tileWidth && x <= tileWidth * (size + 1) && y>tileHeight && y <= tileHeight * (size + 1)) {
+            marker.x = currentLayer.getTileX(x) * 64;
+            marker.y = currentLayer.getTileY(y) * 64;
+        }
+    }
+
+    function createTileSelector() {
+
+        //  Our tile selection window
+        var tileSelector = game.add.group();
+
+        tileSelector.fixedToCamera = true;
+
+        //  Our painting marker
+        marker = game.add.graphics();
+        marker.lineStyle(2, 0x000000, 1);
+        marker.drawRect(0, 0, 64, 64);
+
+    }
+
+    function pickTile(sprite, pointer) {
+
+        currentTile = game.math.snapToFloor(pointer.x, 64) / 64;
+        
+    }
+
+    function loadJSON(path, success, error)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function()
+        {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    if (success)
+                        success(JSON.parse(xhr.responseText));
+                } else {
+                    if (error)
+                        error(xhr);
+                }
+            }
+        };
+        xhr.open("GET", path, true);
+        xhr.send();
+    }
+    </script>
+
+</body>
+</html>

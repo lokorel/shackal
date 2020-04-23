@@ -1,0 +1,857 @@
+{
+    "id": 79362,
+    "map": {
+        "tiles": [ {
+            "id": 0, "sprite_id": 28, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 1, "sprite_id": 37, "rot": 0, "flipped": false, "selected": true
+        }
+        ,
+        {
+            "id": 2, "sprite_id": 31, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 3, "sprite_id": 28, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 4, "sprite_id": 8, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 5, "sprite_id": 14, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 6, "sprite_id": 28, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 7, "sprite_id": 10, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 8, "sprite_id": 11, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 9, "sprite_id": 32, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 10, "sprite_id": 27, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 11, "sprite_id": 28, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 12, "sprite_id": 28, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 13, "sprite_id": 28, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 14, "sprite_id": 15, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 15, "sprite_id": 28, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 16, "sprite_id": 44, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 17, "sprite_id": 42, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 18, "sprite_id": 42, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 19, "sprite_id": 4, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 20, "sprite_id": 17, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 21, "sprite_id": 21, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 22, "sprite_id": 35, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 23, "sprite_id": 28, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 24, "sprite_id": 27, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 25, "sprite_id": 1, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 26, "sprite_id": 25, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 27, "sprite_id": 20, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 28, "sprite_id": 16, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 29, "sprite_id": 28, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 30, "sprite_id": 28, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 31, "sprite_id": 16, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 32, "sprite_id": 28, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 33, "sprite_id": 28, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 34, "sprite_id": 16, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 35, "sprite_id": 6, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 36, "sprite_id": 23, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 37, "sprite_id": 36, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 38, "sprite_id": 4, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 39, "sprite_id": 3, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 40, "sprite_id": 9, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 41, "sprite_id": 9, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 42, "sprite_id": 40, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 43, "sprite_id": 28, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 44, "sprite_id": 13, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 45, "sprite_id": 28, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 46, "sprite_id": 28, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 47, "sprite_id": 32, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 48, "sprite_id": 29, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 49, "sprite_id": 23, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 50, "sprite_id": 35, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 51, "sprite_id": 43, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 52, "sprite_id": 39, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 53, "sprite_id": 28, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 54, "sprite_id": 22, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 55, "sprite_id": 4, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 56, "sprite_id": 30, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 57, "sprite_id": 3, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 58, "sprite_id": 28, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 59, "sprite_id": 28, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 60, "sprite_id": 28, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 61, "sprite_id": 28, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 62, "sprite_id": 28, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 63, "sprite_id": 34, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 64, "sprite_id": 24, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 65, "sprite_id": 28, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 66, "sprite_id": 29, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 67, "sprite_id": 28, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 68, "sprite_id": 10, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 69, "sprite_id": 28, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 70, "sprite_id": 16, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 71, "sprite_id": 15, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 72, "sprite_id": 21, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 73, "sprite_id": 15, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 74, "sprite_id": 44, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 75, "sprite_id": 28, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 76, "sprite_id": 22, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 77, "sprite_id": 28, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 78, "sprite_id": 38, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 79, "sprite_id": 21, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 80, "sprite_id": 39, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 81, "sprite_id": 10, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 82, "sprite_id": 28, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 83, "sprite_id": 16, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 84, "sprite_id": 36, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 85, "sprite_id": 40, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 86, "sprite_id": 34, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 87, "sprite_id": 3, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 88, "sprite_id": 35, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 89, "sprite_id": 28, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 90, "sprite_id": 22, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 91, "sprite_id": 3, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 92, "sprite_id": 6, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 93, "sprite_id": 16, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 94, "sprite_id": 22, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 95, "sprite_id": 36, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 96, "sprite_id": 43, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 97, "sprite_id": 21, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 98, "sprite_id": 12, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 99, "sprite_id": 5, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 100, "sprite_id": 7, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 101, "sprite_id": 28, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 102, "sprite_id": 28, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 103, "sprite_id": 7, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 104, "sprite_id": 6, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 105, "sprite_id": 15, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 106, "sprite_id": 32, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 107, "sprite_id": 27, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 108, "sprite_id": 2, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 109, "sprite_id": 28, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 110, "sprite_id": 5, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 111, "sprite_id": 28, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 112, "sprite_id": 3, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 113, "sprite_id": 4, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 114, "sprite_id": 44, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 115, "sprite_id": 32, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 116, "sprite_id": 26, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 117, "sprite_id": 28, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 118, "sprite_id": 14, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 119, "sprite_id": 33, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 120, "sprite_id": 19, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 121, "sprite_id": 28, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 122, "sprite_id": 37, "rot": 270, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 123, "sprite_id": 28, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 124, "sprite_id": 39, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 125, "sprite_id": 38, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 126, "sprite_id": 21, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 127, "sprite_id": 28, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 128, "sprite_id": 40, "rot": 0, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 129, "sprite_id": 18, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 130, "sprite_id": 24, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 131, "sprite_id": 34, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 132, "sprite_id": 28, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 133, "sprite_id": 38, "rot": 90, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 134, "sprite_id": 13, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 135, "sprite_id": 23, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 136, "sprite_id": 22, "rot": 0, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 137, "sprite_id": 28, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 138, "sprite_id": 28, "rot": 180, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 139, "sprite_id": 37, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 140, "sprite_id": 41, "rot": 180, "flipped": true, "selected": false
+        }
+        ,
+        {
+            "id": 141, "sprite_id": 10, "rot": 90, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 142, "sprite_id": 28, "rot": 270, "flipped": false, "selected": false
+        }
+        ,
+        {
+            "id": 143, "sprite_id": 27, "rot": 90, "flipped": false, "selected": false
+        }
+        ]
+    }
+    ,
+    "pirates": [ {
+        "id": 0, "sprite_id": 55, "xy_px": [715, 711], "rotated": false
+    }
+    ,
+    {
+        "id": 1, "sprite_id": 55, "xy_px": [525, 790], "rotated": false
+    }
+    ,
+    {
+        "id": 2, "sprite_id": 55, "xy_px": [541, 786], "rotated": false
+    }
+    ,
+    {
+        "id": 3, "sprite_id": 56, "xy_px": [-1, -1], "rotated": false
+    }
+    ,
+    {
+        "id": 4, "sprite_id": 56, "xy_px": [-1, -1], "rotated": false
+    }
+    ,
+    {
+        "id": 5, "sprite_id": 56, "xy_px": [-1, -1], "rotated": false
+    }
+    ,
+    {
+        "id": 6, "sprite_id": 57, "xy_px": [382, 145], "rotated": false
+    }
+    ,
+    {
+        "id": 7, "sprite_id": 57, "xy_px": [431, 125], "rotated": false
+    }
+    ,
+    {
+        "id": 8, "sprite_id": 57, "xy_px": [425, 225], "rotated": false
+    }
+    ,
+    {
+        "id": 9, "sprite_id": 58, "xy_px": [-1, -1], "rotated": false
+    }
+    ,
+    {
+        "id": 10, "sprite_id": 58, "xy_px": [837, 431], "rotated": false
+    }
+    ,
+    {
+        "id": 11, "sprite_id": 58, "xy_px": [732, 598], "rotated": false
+    }
+    ,
+    {
+        "id": 12, "sprite_id": 49, "xy_px": [-1, -1], "rotated": false
+    }
+    ,
+    {
+        "id": 13, "sprite_id": 50, "xy_px": [-1, -1], "rotated": false
+    }
+    ,
+    {
+        "id": 14, "sprite_id": 51, "xy_px": [-1, -1], "rotated": false
+    }
+    ],
+    "ships": [ {
+        "id": 0, "sprite_id": 45, "xy_px": [446, 836]
+    }
+    ,
+    {
+        "id": 1, "sprite_id": 45, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 2, "sprite_id": 45, "xy_px": [445, 223]
+    }
+    ,
+    {
+        "id": 3, "sprite_id": 45, "xy_px": [-1, -1]
+    }
+    ],
+    "coins": [ {
+        "id": 36, "sprite_id": 47, "xy_px": [969, 109]
+    }
+    ,
+    {
+        "id": 0, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 1, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 2, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 3, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 4, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 5, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 6, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 7, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 8, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 9, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 10, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 11, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 12, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 13, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 14, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 15, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 16, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 17, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 18, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 19, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 20, "sprite_id": 46, "xy_px": [457, 557]
+    }
+    ,
+    {
+        "id": 21, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 22, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 23, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 24, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 25, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 26, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 27, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 28, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 29, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 30, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 31, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 32, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 33, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 34, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 35, "sprite_id": 46, "xy_px": [-1, -1]
+    }
+    ],
+    "rums": [ {
+        "id": 0, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 1, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 2, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 3, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 4, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 5, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 6, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 7, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 8, "sprite_id": 52, "xy_px": [-1, -1]
+    }
+    ],
+    "cannonballs": [ {
+        "id": 0, "sprite_id": 48, "xy_px": [-1, -1]
+    }
+    ,
+    {
+        "id": 1, "sprite_id": 48, "xy_px": [-1, -1]
+    }
+    ],
+    "boat": {
+        "id": 0, "sprite_id": 53, "xy_px": [-1, -1]
+    }
+    ,
+    "cart": {
+        "id": 0, "sprite_id": 54, "xy_px": [-1, -1]
+    }
+}
